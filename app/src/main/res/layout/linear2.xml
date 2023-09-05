@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Option Icon at the top left corner -->
+    <ImageView
+        android:id="@+id/option_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_keyboard_option_key_24"
+        android:layout_gravity="start"
+        android:padding="16dp" />
+
+    <!-- Cart Icon at the top right corner -->
+    <ImageView
+        android:id="@+id/cart_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_shopping_cart_24"
+        android:layout_gravity="end"
+        android:padding="16dp" />
+
+    <!-- Text View for plant type -->
+    <TextView
+        android:id="@+id/plant_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What kind of plants you want"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <!-- Search Bar with icons -->
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Search..."
+            android:padding="8dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_search_24"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/voice_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_keyboard_voice_24"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Four Text Views in the same line -->
+    <LinearLayout
+        android:id="@+id/text_views_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_view_all"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/text_view_small"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Small"
+            android:textColor="#008000"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/text_view_medium"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/text_view_large"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Large"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Four Cards with images, text, and add icon -->
+    <GridLayout
+        android:id="@+id/cards_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:padding="16dp">
+
+        <!-- Card 1 -->
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="#008000"
+            android:padding="16dp">
+
+            <!-- Card 1 Content -->
+
+            <ImageView
+                android:id="@+id/card_image_11"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/flower" />
+
+            <TextView
+                android:id="@+id/card_text_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indoor"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/add_icon_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_heart_broken_24"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/card_text_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ficas"
+                android:layout_marginTop="170dp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/card_text_36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From $12"
+                android:layout_marginTop="185dp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/add_icon_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_add_24"
+                android:layout_marginTop="180dp"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="#008000"
+            android:layout_marginLeft="20dp"
+            android:padding="16dp">
+
+            <!-- Card 1 Content -->
+
+            <ImageView
+                android:id="@+id/card_image_18"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/flower" />
+
+            <TextView
+                android:id="@+id/card_text_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indoor"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/add_icon_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_heart_broken_24"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/card_text_29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ficas"
+                android:layout_marginTop="170dp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/card_text_34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From $12"
+                android:layout_marginTop="185dp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/add_icon_26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_add_24"
+                android:layout_marginTop="180dp"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="#008000"
+            android:padding="16dp">
+
+            <!-- Card 1 Content -->
+
+            <ImageView
+                android:id="@+id/card_image_45"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/flower" />
+
+            <TextView
+                android:id="@+id/card_text_19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indoor"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/add_icon_67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_heart_broken_24"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/card_text_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ficas"
+                android:layout_marginTop="170dp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/card_text_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From $12"
+                android:layout_marginTop="185dp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/add_icon_90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_add_24"
+                android:layout_marginTop="180dp"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="#008000"
+            android:padding="16dp">
+
+            <!-- Card 1 Content -->
+
+            <ImageView
+                android:id="@+id/card_image_1"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/flower" />
+
+            <TextView
+                android:id="@+id/card_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indoor"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/add_icon_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_heart_broken_24"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/card_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ficas"
+                android:layout_marginTop="170dp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/card_text_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From $12"
+                android:layout_marginTop="185dp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/add_icon_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_add_24"
+                android:layout_marginTop="180dp"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <!-- Card 2, 3, and 4 - Similar to Card 1 -->
+        <!-- You can duplicate and customize Card 1 layout for Cards 2, 3, and 4 -->
+    </GridLayout>
+
+</LinearLayout>

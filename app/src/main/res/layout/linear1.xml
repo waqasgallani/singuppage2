@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Centered Image -->
+    <ImageView
+        android:id="@+id/centeredImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/pic4" />
+
+    <!-- Username and Password Box -->
+    <LinearLayout
+        android:id="@+id/usernamePasswordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/green">
+
+        <!-- Username Icon and EditText -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/usernameIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_supervised_user_circle_24" />
+
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Username"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+        <!-- Password Icon and EditText -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_password_24" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+        <!-- Forgot Password Text -->
+        <TextView
+            android:id="@+id/forgotPasswordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="Forgot Password"
+            android:textColor="#000000" />
+
+        <!-- Sign In Button -->
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:text="Sign In" />
+
+        <!-- New User Text -->
+        <TextView
+            android:id="@+id/newUserText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="New User?" />
+
+        <!-- Sign Up Text -->
+        <TextView
+            android:id="@+id/signUpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="Sign Up"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</LinearLayout>
